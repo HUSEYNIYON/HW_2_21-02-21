@@ -6,8 +6,6 @@ namespace HW_2_21_01_21
     {
         static void Main(string[] args)
         {
-
-            llll:
             //Task 2
             //var purchase = Double.Parse(Console.ReadLine());
             //var discount = 0.0;
@@ -61,60 +59,32 @@ namespace HW_2_21_01_21
             int max = 0, mid = 0, min = 0;
             if (a > b & b > c)
             {
-                max = a;
-                mid = b;
-                min = c;
-                Console.WriteLine($"A = {a = max}");
-                Console.WriteLine($"B = {b = mid}");
-                Console.WriteLine($"C ={c = min}");
+                max = a; mid = b; min = c;
             }
             else if (b > a & a > c)
             {
-                max = b;
-                mid = a;
-                min = c;
-                Console.WriteLine($"A = {a = max}");
-                Console.WriteLine($"B = {b = mid}");
-                Console.WriteLine($"C = {c = min}");
+                max = b; mid = a; min = c;
             }
             else if (c > b & b > a)
             {
-                max = c;
-                mid = b;
-                min = a;
-                Console.WriteLine($"A = {a = max}");
-                Console.WriteLine($"B = {b = mid}");
-                Console.WriteLine($"C = {c = min}");
+                max = c; mid = b; min = a;
             }
             else if (a > b & a > c & b < c)
             {
-                max = a;
-                mid = c;
-                min = b;
-                Console.WriteLine($"A = {a = max}");
-                Console.WriteLine($"B = {b = mid}");
-                Console.WriteLine($"C = {c = min}");
+                max = a; mid = c; min = b;
             }
             else if (a < b & b > c)
             {
-                max = b;
-                mid = c;
-                min = a;
-                Console.WriteLine($"A = {a = max}");
-                Console.WriteLine($"B = {b = mid}");
-                Console.WriteLine($"C ={c = min}");
+                max = b; mid = c; min = a;
             }
             else if (a > b & b < c & a < c)
             {
-                max = c;
-                mid = a;
-                min = b;
-                Console.WriteLine($"A = {a = max}");
-                Console.WriteLine($"B = {b = mid}");
-                Console.WriteLine($"C ={c = min}");
+                max = c; mid = a; min = b;
             }
-            goto llll;
+            Console.WriteLine($"A = {a = max}");
+            Console.WriteLine($"B = {b = mid}");
+            Console.WriteLine($"C = {c = min}");
         }
     }
-    }
+}
 
